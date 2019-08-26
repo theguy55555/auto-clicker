@@ -1,0 +1,1 @@
+const autoClicker = new AutoClicker();

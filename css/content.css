@@ -1,0 +1,45 @@
+div#AutoClickerIndicator,
+div#AutoClickerIndicator:before,
+div#AutoClickerIndicator:after {
+    display: block;
+    position: absolute;
+}
+
+div#AutoClickerIndicator {
+    position: absolute;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 9999;
+}
+
+div#AutoClickerIndicator:before,
+div#AutoClickerIndicator:after {
+    top: 50%;
+    left: 50%;
+    content: "";
+    border-radius: 50%;
+    border: 2px solid #4dabf7;
+    border-top-color: #ff8787
+}
+
+div#AutoClickerIndicator:before {
+    width: 10px;
+    height: 10px;
+    animation: loading 0.6s ease-in-out infinite
+}
+
+div#AutoClickerIndicator:after {
+    width: 15px;
+    height: 15px;
+    animation: loading 0.4s ease-in-out infinite reverse
+}
+
+@keyframes loading {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg)
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg)
+    }
+}
