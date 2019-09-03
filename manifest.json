@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "browser_action": {
     "default_popup": "popup.html",
-    "default_title": "Shift+1: Start auto click\nShift+Alt+1: Start auto click with interval\nShift+2: Stop auto click"
+    "default_title": "Shift + F1: Start auto click\nShift+Alt + F1: Start auto click with interval\nShift + F2: Stop auto click"
   },
   "icons": {
     "128": "/img/click.png"
