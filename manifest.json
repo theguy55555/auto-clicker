@@ -1,7 +1,7 @@
 {
   "name": "Auto Clicker",
   "description": "Just click automation",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "Shift+1: Start auto click\nShift+Alt+1: Start auto click with interval\nShift+2: Stop auto click"
