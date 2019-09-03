@@ -84,9 +84,9 @@ class AutoClicker {
 
   windowKeyupListener(event) {
     if (event.shiftKey) {
-      if (event.code === 'Digit1') {
+      if (event.code === 'F1') {
         this.runAutoClick(event.altKey);
-      } else if (event.code === 'Digit2') {
+      } else if (event.code === 'F2') {
         this.stopAutoClick();
       }
     }
