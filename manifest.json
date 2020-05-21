@@ -1,10 +1,10 @@
 {
   "name": "Auto Clicker",
   "description": "Just click automation",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "browser_action": {
     "default_popup": "popup.html",
-    "default_title": "Shift + F1: Start auto click\nShift+Alt + F1: Start auto click with interval\nShift + F2: Stop auto click"
+    "default_title": "Ctrl + ,(Comma): Start auto click\nCtrl + Alt + ,(Comma): Start auto click with interval\nCtrl + .(Period): Stop auto click"
   },
   "icons": {
     "128": "/img/click.png"
@@ -12,7 +12,8 @@
   "manifest_version": 2,
 
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "content_scripts": [
     {
@@ -24,6 +25,7 @@
         "css/content.css"
       ],
       "js": [
+        "js/common.js",
         "js/AutoClicker.js",
         "js/content.js"
       ]
