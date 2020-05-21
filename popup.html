@@ -14,12 +14,36 @@
 </head>
 <body>
 <div>
-  <h3>Start: <span>Shift + F1</span></h3>
-  <h3>Stop: <span>Shift + F2</span></h3>
-  <h3>Start with interval: <span>Shift + Alt(Option) + F1</span></h3>
-  <h3>That's all.😎</h3>
+  <h2>Information</h2>
+  <p>Start: <span id="start-span">Ctrl + ,(Comma)</span></p>
+  <p>Stop: <span id="stop-span">Ctrl + .(Period)</span></p>
+  <p>Start with interval: <span id="start-with-interval-span">Ctrl + Alt(Option) + ,(Comma)</span></p>
+  <p>That's all.😎</p>
+  <h2>Options</h2>
+  <div id="options-form-container">
+    <form id="options-form">
+      <h3>Select click event type</h3>
+      <label>Click<input id="click" class="event-inputs" type="radio" name="event" value="click"></label>
+      <label>Mousedown<input id="mousedown" class="event-inputs" type="radio" name="event" value="mousedown"></label>
+<!--      <h3>Shortcuts</h3>-->
+<!--      <div>-->
+<!--        <label>Start: <input type="text"></label>-->
+<!--      </div>-->
+<!--      <div>-->
+<!--        <label>Stop: <input type="text"></label>-->
+<!--      </div>-->
+<!--      <div>-->
+<!--        <label>Start with interval: <input type="text"></label>-->
+<!--      </div>-->
+
+      <h3 id="options-buttons-wrapper">
+        <button id="reset-button" type="reset">Reset</button>
+      </h3>
+    </form>
+  </div>
 </div>
 
-
+<script src="./js/common.js"></script>
+<script src="./js/popup.js"></script>
 </body>
 </html>
