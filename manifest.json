@@ -1,18 +1,20 @@
 {
   "name": "Auto Clicker",
   "description": "Just click automation",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "Ctrl + ,(Comma): Start auto click\nCtrl + Alt + ,(Comma): Start auto click with interval\nCtrl + .(Period): Stop auto click"
   },
   "icons": {
+    "16": "/img/click.png",
+    "32": "/img/click.png",
+    "48": "/img/click.png",
     "128": "/img/click.png"
   },
   "manifest_version": 2,
 
   "permissions": [
-    "activeTab",
     "storage"
   ],
   "content_scripts": [
